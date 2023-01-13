@@ -10,6 +10,10 @@ chkbox = Checkbutton(root, text="Don't show this popup today", variable=chkvar)
 # chkbox.deselect() # uncheck
 chkbox.pack()
 
+chkvar2 = IntVar()
+chkbox2 = Checkbutton(root, text="Don't show for a week", variable=chkvar2)
+chkbox2.pack()
+
 
 def btncmd():
     print(chkvar.get())  # 0: unchecked, 1: checked
